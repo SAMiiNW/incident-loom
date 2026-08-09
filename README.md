@@ -4,6 +4,8 @@
 
 IncidentLoom is a dark-room command surface for responders operating while the facts are still moving. It preserves the first observable signals, the containment action, the known risk, and the recovery route as a single immutable incident record. GenLayer validators act as an independent council: they read the same evidence and decide what the situation actually demands.
 
+**Live command wall:** https://incident-loom.pages.dev
+
 ## Situation board
 
 ```text
@@ -44,6 +46,7 @@ The model does not get the final word alone. Deterministic contract rules reject
 | Network | GenLayer Bradbury Testnet |
 | Chain ID | `4221` |
 | Contract | `0xcd9d3324d0d3a524CEF16184e6e58841bd58423F` |
+| Live app | https://incident-loom.pages.dev |
 | Deployer | `0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f` |
 | Explorer | [Bradbury Explorer](https://explorer-bradbury.genlayer.com/) |
 
@@ -99,4 +102,3 @@ Visit `http://localhost:3101`. Wallet connection automatically requests Bradbury
 - `scripts/deploy.py` — SAMiiNW Bradbury deployment path
 
 IncidentLoom is not an observability clone and it does not pretend to replace responders. It creates a durable boundary between what an operator observed, what validators concluded, and what the chain can prove.
-
