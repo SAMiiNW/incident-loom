@@ -1,7 +1,7 @@
 'use client';
 import {createAccount,createClient} from 'genlayer-js';
 import {testnetBradbury} from 'genlayer-js/chains';
-export const CONTRACT=(process.env.NEXT_PUBLIC_CONTRACT_ADDRESS||'0xe7cCb3F665924861f5155FE3336EFC17f0321254') as `0x${string}`;
+export const CONTRACT=(process.env.NEXT_PUBLIC_CONTRACT_ADDRESS||'0xbBfb18CF9a7A91B783a15F8961819166a1128578') as `0x${string}`;
 export const EXPLORER='https://explorer-bradbury.genlayer.com/tx';
 const endpoint='https://rpc-bradbury.genlayer.com';const reader:any=createClient({chain:testnetBradbury,endpoint,account:createAccount()});let wallet:any;let connectPromise:Promise<string>|null=null;
 const pause=(n:number)=>new Promise(r=>setTimeout(r,n));const transient=(e:any)=>/pipeline backpressure|not currently accepting|l1_sender_commit|failed to fetch|networkerror|network request failed|timeout/i.test(String(e?.message||e));
