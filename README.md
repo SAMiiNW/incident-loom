@@ -45,7 +45,7 @@ The model does not get the final word alone. Deterministic contract rules reject
 |---|---|
 | Network | GenLayer Bradbury Testnet |
 | Chain ID | `4221` |
-| Contract | `0xDDf58162f7e6f8D0D091130Ba810a5dd14e47946` |
+| Contract | `0xe7cCb3F665924861f5155FE3336EFC17f0321254` |
 | Live app | https://incident-loom.pages.dev |
 | Deployer | `0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f` |
 | Explorer | [Bradbury Explorer](https://explorer-bradbury.genlayer.com/) |
