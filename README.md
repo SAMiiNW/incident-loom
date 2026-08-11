@@ -45,14 +45,16 @@ The model does not get the final word alone. Deterministic contract rules reject
 |---|---|
 | Network | GenLayer Bradbury Testnet |
 | Chain ID | `4221` |
-| Contract | `0xcd9d3324d0d3a524CEF16184e6e58841bd58423F` |
+| Contract | `0xDDf58162f7e6f8D0D091130Ba810a5dd14e47946` |
 | Live app | https://incident-loom.pages.dev |
 | Deployer | `0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f` |
 | Explorer | [Bradbury Explorer](https://explorer-bradbury.genlayer.com/) |
 
 ## Operator procedure
 
-Open the command wall, connect Rabby or MetaMask, then choose **Open incident**. Record a concise title, affected service, direct observation, known risk, the action already taken, and a recovery path. Sealing the incident is one wallet transaction. Requesting the council verdict is a separate, explicit transaction.
+Open the command wall, connect Rabby or MetaMask, then choose **Open incident**. Record the affected service, direct observation, a public telemetry URL, and the concrete response action the verdict will control. The contract fetches and freezes the telemetry itself; validators judge that authenticated snapshot and bind their verdict to the response action. Sealing and assessment remain two explicit wallet transactions.
+
+Bradbury workflow verification: incident record `0xf3af61d53903851890fddf53cd5087749c0ff6569f72d4db269428695d697c74`; bound assessment `0xdefb46dfe608ca9ef3d79611124e10232bb3241edc0c3a8803da29ff557c5a85`.
 
 Keep the page open while the validator council reaches agreement. IncidentLoom never submits a replacement transaction behind the operator's back: it keeps the original hash and polls its receipt at a controlled interval.
 
