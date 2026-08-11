@@ -2,7 +2,7 @@
 import {createAccount,createClient} from 'genlayer-js';
 import {testnetBradbury} from 'genlayer-js/chains';
 export const CONTRACT=(process.env.NEXT_PUBLIC_CONTRACT_ADDRESS||'0xDDf58162f7e6f8D0D091130Ba810a5dd14e47946') as `0x${string}`;
-export const EXPLORER='https://explorer-bradbury.genlayer.com/transactions';
+export const EXPLORER='https://explorer-bradbury.genlayer.com/tx';
 const endpoint='https://rpc-bradbury.genlayer.com';const reader:any=createClient({chain:testnetBradbury,endpoint,account:createAccount()});let wallet:any;let connectPromise:Promise<string>|null=null;
 const pause=(n:number)=>new Promise(r=>setTimeout(r,n));const transient=(e:any)=>/pipeline backpressure|not currently accepting|l1_sender_commit|failed to fetch|networkerror|network request failed|timeout/i.test(String(e?.message||e));
 async function waitForAccount(eth:any){for(let i=0;i<120;i++){const accounts=await eth.request({method:'eth_accounts'}).catch(()=>[]);if(accounts?.[0])return accounts[0] as string;await pause(500)}throw Error('Wallet selection timed out. Close the wallet picker and try again.')}
